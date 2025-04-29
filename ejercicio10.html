@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía Completa</title>
+    <style>
+      body { margin: 0; font-family: 'Helvetica Neue', sans-serif; color: #333; }
+      header, footer { background: #5C9DBF; color: #fff; text-align: center; padding: 1rem; }
+      .layout { display: grid; grid-template-areas: 'main sidebar'; grid-template-columns: 2fr 1fr; gap: 1rem; padding: 1rem; }
+      .main { grid-area: main; background: #fff; padding: 1rem; border-radius: 6px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); }
+      .sidebar { grid-area: sidebar; background: #eef6f9; padding: 1rem; border-radius: 6px; }
+      footer p { margin: 0; }
+      @media (max-width: 700px) { .layout { grid-template-areas: 'main' 'sidebar'; grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Erick - Mi Biografía</h1>
+    </header>
+    <div class="layout">
+      <article class="main">
+        <h2>Sobre mí</h2>
+        <p>Ingeniero de sistemas con experiencia en desarrollo frontend y backend.</p>
+      </article>
+      <aside class="sidebar">
+        <h3>Contacto</h3>
+        <p>Email: erick@example.com</p>
+      </aside>
+    </div>
+    <footer>
+      <p>&copy; 2025 Erick. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+  </html>

@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 0; }
+      .container { display: flex; }
+      .sidebar { width: 250px; background: #5C9DBF; color: #fff; padding: 1rem; }
+      .main { flex: 1; padding: 1rem; }
+      @media (max-width: 600px) {
+        .container { flex-direction: column; }
+        .sidebar { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">Menú Lateral</aside>
+      <main class="main">
+        <h1>Contenido Principal</h1>
+        <p>Este diseño se adapta a móviles.</p>
+      </main>
+    </div>
+  </body>
+  </html>
